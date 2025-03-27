@@ -5,8 +5,8 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/arnarg/plex_exporter/config"
-	v "github.com/arnarg/plex_exporter/version"
+	"github.com/netmax79/plex_exporter/config"
+	v "github.com/netmax79/plex_exporter/version"
 	log "github.com/sirupsen/logrus"
 )
 

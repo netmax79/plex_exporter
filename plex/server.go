@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/arnarg/plex_exporter/config"
-	"github.com/arnarg/plex_exporter/plex/api"
 	"github.com/imdario/mergo"
+	"github.com/netmax79/plex_exporter/config"
+	"github.com/netmax79/plex_exporter/plex/api"
 )
 
 type Server struct {

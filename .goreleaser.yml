@@ -2,7 +2,7 @@ builds:
 - env:
   - CGO_ENABLED=0
   ldflags:
-  - -s -w -X github.com/arnarg/plex_exporter/version.Version={{.Version}}
+  - -s -w -X github.com/netmax79/plex_exporter/version.Version={{.Version}}
   goos:
   - linux
   - darwin
