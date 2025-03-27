@@ -1,4 +1,4 @@
-module github.com/arnarg/plex_exporter
+module github.com/netmax79/plex_exporter
 
 go 1.14
 
