@@ -1,4 +1,4 @@
-# github.com/alexliesenfeld/health v0.6.0
+# github.com/alexliesenfeld/health v0.8.0
 ## explicit
 github.com/alexliesenfeld/health
 # github.com/arnarg/plex_exporter v0.2.3

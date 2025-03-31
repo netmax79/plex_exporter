@@ -65,7 +65,7 @@ func main() {
 
 	// Create a new Checker.
 	checker := health.NewChecker(
-
+		
 		// Set the time-to-live for our cache to 1 second (default).
 		health.WithCacheDuration(1*time.Second),
 
@@ -109,7 +109,7 @@ func main() {
 
 ```
 
-Because our search component is down, the request `curl -u username:password http://localhost:3000/health`
+Because our search component is down, the request `curl http://localhost:3000/health`
 would yield a response with HTTP status code `503 (Service Unavailable)`, and the following JSON response body:
 
 ```json
@@ -260,7 +260,7 @@ without or minimal adjustments:
       Name: "google",
       Check: func(ctx context.Context) error {
          deadline, _ := ctx.Deadline()
-         timeout := time.Now().Sub(deadline)
+         timeout := time.Since(deadline)
          return healthcheck.HTTPGetCheck("https://www.google.com", timeout)()
       },
   }),
